@@ -4,7 +4,7 @@ const moviePlayerObserver = new MutationObserver(function (mutations, observer) 
             const target = mutation.target;
             if (target.classList.contains('ad-showing')) {
                 var adVideo = document.getElementsByClassName('video-stream html5-main-video')[0];
-                if (adVideo !== undefined && !isNaN(adVideo.duration)) {
+                if (adVideo !== undefined && !isNaN(adVideo.duration) && adVideo.currentTime !== adVideo.duration) {
                     console.debug('Found ad. Fast forwarding to the end.');
                     adVideo.currentTime = adVideo.duration;
                 }
