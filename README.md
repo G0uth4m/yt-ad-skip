@@ -13,3 +13,4 @@ git clone https://github.com/G0uth4m/yt-ad-skip
 ```
 
 - In Firefox, go to `about:debugging#/runtime/this-firefox` page -> click `Load Temporary Add-on...` button -> select `manifest.json` file in the extension's directory.
+- In Google Chrome, go to `chrome://extensions/` page -> check `Developer mode` -> Click `Load unpacked` and select the extension folder `yt-ad-skip`
